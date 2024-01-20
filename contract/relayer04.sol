@@ -10,7 +10,8 @@ pragma solidity ^0.8.9;
 *   in the whole foundation of relayers because when you give your transactions to a relayer, it has the
 *   ability to send it whenever it wants and they can send it even after that changing in the base of function
 *   so contracts process flow should not depend on the external state somehow that it lets the second transaction that
-*   uses this signature to have it's _msgSender() called after having less gas than the last time that it was computed on this block 
+*   uses this signature to have it's _msgSender() called after having less gas than the last time that it was computed on this block
+*   this is good if we have multiple _msgSender() call in the function and we do not wANT TO 
 */
 
 error NotApprovedSign();
