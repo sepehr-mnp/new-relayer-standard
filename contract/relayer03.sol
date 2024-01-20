@@ -4,6 +4,7 @@ pragma solidity ^0.8.9;
 /*
 *   this version uses nounce
 *   and address mapping
+*   this version is even better than version 04
 */
 
 error NotApprovedSign();
